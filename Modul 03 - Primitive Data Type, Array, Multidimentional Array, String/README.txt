@@ -1,0 +1,2 @@
+Soal 2
+Write a simple program that functions to run several string methods. The program will receive input in the form of a name, after which the program will ask the user to select a menu option to run the string method in the menu.

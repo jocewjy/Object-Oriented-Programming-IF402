@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SaleFormController">
+   <children>
+      <GridPane layoutX="84.0" layoutY="64.0" prefHeight="188.0" prefWidth="433.0">
+         <children>
+            <Label text="Item">
+               <GridPane.margin>
+                  <Insets left="65.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Selling Price" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="40.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtSellingPrice" prefHeight="39.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <ComboBox fx:id="cboItem" prefHeight="39.0" prefWidth="295.0" GridPane.columnIndex="1" />
+            <Label text="Amount" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="50.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txtAmount" prefHeight="39.0" prefWidth="252.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         </children>
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="239.0" minWidth="10.0" prefWidth="195.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="292.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Button layoutX="180.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#addSale" prefHeight="47.0" prefWidth="240.0" text="Sell Item" />
+   </children>
+</AnchorPane>
